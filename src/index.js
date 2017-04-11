@@ -19,10 +19,16 @@ let links = {
 
 // Экспорт ---------------------------------------------------------------------
 let options = { links, templates, flections }
-module.exports = num => {
+let ryba = num => {
     if (num == null) {
         num = 1
     }
 
     return getText(Math.max(num, 0), options)
+}
+
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = ryba
+} else if (window) {
+    window.ryba = ryba
 }
