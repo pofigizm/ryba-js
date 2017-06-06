@@ -24,7 +24,7 @@
     "url": "https://github.com/danakt/ryba-js/issues"
   },
   "homepage": "https://github.com/danakt/ryba-js#readme",
-  "dependencies": 
+  "dependencies": {
     "text-generator-core": "^0.0.5"
   },
   "devDependencies": {
